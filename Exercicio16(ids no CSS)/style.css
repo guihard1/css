@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*
+Para estilizar um unico elemento usando id é só ir no css e colocar #nomedoid que foi colocado lá no html id=""
+
+para estilizar um unico elemento usando class é só ir no css e colocar .nomedoelemento que foi colocado lá no html class=""
+*/
+
+/*
+Para um desenvolvimento semântico
+id não pode ter o mesmo nome em diferentes locais
+id é único, porem o class pode ter o mesmo nome em diferentes locais. id é unico e class não.
+*/
+body {
+    background-color: lightslategray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: rgb(201, 189, 243);
+}
+
+h2 {
+    color: rgb(201, 189, 243);
+}
+
+#principal {
+    text-align: center;
+}

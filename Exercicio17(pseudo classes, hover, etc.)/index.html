@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightslategray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        div > div {
+            display: none;
+        }
+
+        div:hover > div {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 199px;
+            margin: 200px -100px -185px 0px;
+            
+        }
+        
+        div:hover {
+            display: inline-block;
+            color: red;
+        }
+        /*
+        é possivel mexer em um elemento dentro de outro, ex:
+
+        div:hover > p {
+
+        }
+        isso faz com você mexa em algo dentro de um elemento, por exemplo a criação de um menu escondido que ao passar o mouse sobre o ícone ou o que quer que você tenha colocado, mostre o que está escondido atraves do ex acima.
+        */
+
+    /*
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+    */
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classes</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        01
+        <div>02</div>
+        <div>03</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulo';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #368f4550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #2d7539;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#topo > h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px 40px 0px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.425);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#topo > p {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+    text-justify: auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section > nav > a {
+    text-decoration: none;
+    padding: 7px;
+    margin: 0px 5px 0px 5px;
+    color: rgba(245, 245, 245, 0.822);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+    font-weight: 700;
+}
+
+section > nav {
+    padding: 5px 0px 10px 0px;
+}
+
+section > nav > a:hover {
+    background-color: rgb(119, 153, 126);
+    color: #2d7539;
+    transition: 0.1s;
+    border-radius: 7px;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+main > section#principal > h2 {
+    font-family: 'titulo';
+    color: #013f0b;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #2d75393f, whitesmoke);
+}
+
+main > section#principal > .solo {
+    background-color: transparent;
+    font-size: 35px;
+    padding: 15px 0px 15px 0px;
+    font-family: 'titulo';
+    color: #013f0b; 
+}
+
+main > section#principal > p {
+    padding: 10px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+i {
+    font-size: 13px;
+}
+
+main > section#principal > p > a {
+    text-decoration: none;
+    color: #013f0b;
+    font-weight: bolder;
+    background-color: #2d753977;
+    padding: 0px 2px 0px 2px;
+}
+
+#bugdroid {
+    text-align: center;
+}
+
+.mark {
+    color: #013f0b;
+    font-weight: bolder;
+}
+
+div.video {
+    border: #013f0b 10px solid;
+    display: flex;
+}
+
+section#titulolista {
+    font-size: 12px;
+    background-color: #013f0b;
+    padding: 5px 0px 5px 5px;
+    margin: 20px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 8px 8px 0px 0px;
+}
+
+section#fundolista {
+    text-indent: 2em;
+    text-align: justify;
+    background-color: #2d753977;
+    padding: 20px 0px 20px 10px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+main > section#fundolista > .paragrafo {
+    padding: 5px 5px 20px 5px;
+}
+
+section > ul#lista {
+    columns: 2;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+
+section#fundolista > .p3 {
+    padding: 0px 0px 30px 0px;
+    margin: 10px;
+}
+
+main > section#p5 {
+    padding: 20px 20px 30px 20px;
+}
+
+footer{
+    background-color: #013f0b;
+    text-align: center;
+    color: white;
+    font-size: 0.6em;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: ' ✔';
+    padding: 0px 10px 0px 0px;
+}
+
+.link {
+    text-decoration: none;
+    color: #013f0b;
+    font-weight: bolder;
+    padding: 0px 2px 0px 2px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #699170;
+}
+
+footer a:hover {
+    background-color: white;
+    color: #013f0b;
+    transition: 0.2s;
+}
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    main {
+        display: block;
+
+    }
+
+    header {
+        width: 100%;
+        display: block; 
+    }
+
+    header > section#topo > nav {
+        padding: 15px 0px 5px 25px;
+    }
+    
+    main {
+        width: 100%;
+        display: block; 
+    }
+
+    footer {
+        width: 100%;
+        display: block; 
+    }
+
+    #bugdroid {
+        width: 100%;
+        display: block;
+    }
+    
+
+
+    section#fundolista > .p3 {
+        padding: 10px 0px 0px 0px;
+    }
+
+    section > ul#lista {
+        columns: 1;
+    }
+}
