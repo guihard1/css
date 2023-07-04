@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens e Paralax</title>
+    <style>
+        div.quadrado {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: rgb(192, 192, 192);
+            width: 150px;
+            height: 150px;
+        }
+
+        div#q1 {
+            background-color: aqua;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to right, rgba(0, 0, 255, 0.753), rgba(0, 128, 0, 0.644));
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <h1>Sobre imagens.</h1>
+        <div class="quadrado" id="q1">
+
+        </div>
+        <div class="quadrado" id="q2">
+
+        </div>
+        <div class="quadrado" id="q3">
+
+        </div>
     </main>
     <footer>
 
