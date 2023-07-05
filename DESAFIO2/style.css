@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+
+body {
+    font-size: 16px;
+}
+
+header {
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 50px 50px 0px 50px;
+    text-shadow: 0px 0px 1px;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    font-size: 5rem;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0px 0px 1px;
+}
+
+header p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#box1 {
+    width: 500px;
+    height: 300px;
+    color: white;
+    display: inline;
+    text-align: justify;
+}
+
+#box1 p {
+    color: black;
+    font-family: 'Sriracha', cursive;
+    text-align: left;
+    font-size: 50px;
+    padding: 50px 0px 350px 40px;
+    margin-bottom: 100px;
+}
+
+#box2 {
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0px 100px 40px;
+}
+
+.texto {
+    color: white;
+    font-family: 'Sriracha', cursive;
+    font-size: 50px;
+    width: 600px;
+    background-color: #00000099;
+    position: relative;
+    text-shadow: 5px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+#box3 {
+    width: 500px;
+    height: 300px;
+    color: white;
+    display: inline;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+#box3 p {
+    color: black;
+    font-family: 'Sriracha', cursive;
+    text-align: left;
+    font-size: 50px;
+    padding: 50px 0px 200px 40px;
+}
+
+#box4 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0px 100px 40px;
+}
+
+#box5 {
+    width: 500px;
+    height: 300px;
+    color: white;
+    display: inline;
+    text-align: justify;
+}
+
+#box5 p {
+    color: black;
+    font-family: 'Sriracha', cursive;
+    text-align: left;
+    font-size: 50px;
+    padding: 50px 0px 200px 40px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.808);
+    text-align: center;
+    padding: 5px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    header h1 {
+        font-size: calc(6vw + 0.3rem);
+    }
+    
+    header h1 span {
+        font-size: calc(7vw + 1rem);
+    }
+
+    #box1 p, #box3 p, #box5 p {
+        font-size: calc(3vw + 0.1rem)
+    }
+
+    #box1 p {
+        padding-bottom: 100px;
+    }
+
+    .texto {
+        font-size: calc(3vw + 0.1rem);
+        width: 55%;
+        text-shadow: 3px 0px 0px rgba(0, 0, 0, 0.24);
+    }
+
+    #box2 {
+        background-position: center right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
